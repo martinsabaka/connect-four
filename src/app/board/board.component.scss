@@ -1,0 +1,42 @@
+.application {
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.board {
+  margin-left: auto;
+  margin-right: auto;
+
+  &--arrow {
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__square {
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: #cecece;
+
+    &--red {
+      background-color: red;
+    }
+
+    &--yellow {
+      background-color: yellow;
+    }
+
+    &--delete:hover, &--add:hover {
+      opacity: 0.3;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+}
